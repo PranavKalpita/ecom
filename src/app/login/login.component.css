@@ -1,0 +1,114 @@
+.login {
+    margin: 0;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+    font-family: Arial, sans-serif;
+    color: #fff;
+    
+  }
+  
+  .login form {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    width: 400px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .login form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .login form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .login form input:focus {
+    border-color: #0f0;
+    outline: none;
+    background-color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .login form input:not(:placeholder-shown):hover {
+    border-color: #0f0;
+    background-color: #1a1a1a;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .login form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login form button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .login form .btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00f;
+    cursor: pointer;
+  }
+  
+  .login form .btn:hover {
+    text-decoration: underline;
+  }
+  .login select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    appearance: none; /* Removes the default browser styles for dropdowns */
+    cursor: pointer;
+  }
+  
+  .login select:hover {
+    border-color: #0f0;
+    background-color: #1a1a1a;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .login select:focus {
+    outline: none;
+    border-color: #0f0;
+    background-color: #333;
+  }
+  
+  .login option {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .login option:hover {
+    background-color: #444;
+  }
+  

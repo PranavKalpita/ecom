@@ -1,0 +1,102 @@
+.pan{
+    align-items: center;
+    margin: 20px 4%;
+}
+
+.pan img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.specialpack{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 4%;
+}
+
+.specialpack img{
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+
+/* Small Card Css */
+
+.allproduct{
+    margin-top: 50px;
+    margin-left: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allproduct>.smcard{
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.allproduct>.smcard>.top>img{
+    background-color: whitesmoke;
+    width: 100px;
+    height: 110px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/* Dairy */
+.dairy
+{
+    margin-left: 4%;
+    margin-top: 50px;
+}
+
+.dairy>.body{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+/* Large Card Style */
+.lcard{
+    width: 200px;
+    height: 300px;
+    border: 0.5px solid rgb(196, 192, 192);
+    border-radius: 15px;
+    margin: 10px;
+}
+.lcard>.imagesection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lcard>.timebtn{
+    width: 40px;
+    height: 14px;
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.lcard>.timebtn>p{
+    font-size: 10px;
+}
+.lcard>.productname,.lcard>.qty,.lcard>.foot{
+    margin-left: 10px;
+}
+.lcard > .foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lcard > .foot > .addbtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}

@@ -1,0 +1,733 @@
+<div class="pan">
+    <a href="#"><img src="../../assets/pancorner.PNG" alt=""></a>
+</div>
+
+<div class="specialpack">
+    <div class="pharmacy">
+       <a href="#"><img src="../../assets/pharmacy.PNG" alt=""></a>
+    </div>
+    <div class="pets">
+       <a href="#"><img src="../../assets/pet.PNG" alt=""></a>
+    </div>
+    <div class="baby">
+       <a href="#"><img src="../../assets/baby.PNG" alt=""></a>
+    </div>
+</div>
+
+
+
+
+<div class="allproduct">
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/vegetable&fruit.png" alt="">
+      </div>
+      <div class="bott">
+         <p>Vegetables & Fruits</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/cold.webp" alt="">
+      </div>
+      <div class="bott">
+         <p>Cold Drinks & Juice</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/bakery.webp" alt="">
+      </div>
+      <div class="bott">
+         <p>Bakery & Biscuits</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/dry.webp" alt="">
+      </div>
+      <div class="bott">
+         <p>Dry Fruits,Masala & Oil</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/paan.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Paan Corner</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/baby.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Pharma & Wellness</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/icecream.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Ice Creams & Frozen Deserts</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/beauty.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Beauty & Cosmetics</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/magazine.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Magazines</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/icecream.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Dairy & Breakfast</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/vegetable&fruit.png" alt="">
+      </div>
+      <div class="bott">
+         <p>Instant & Frozen Food</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/icecream.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Sweet Tooth</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/sause.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Sauces & Spreads</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/magazine.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Organic & Premium</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/beauty.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Cleaning Essentials</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/bakery.webp" alt="">
+      </div>
+      <div class="bott">
+         <p>Personal Care</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/magazine.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Books</p>
+      </div>
+   </div>
+
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/paan.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Print Store</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/pharmacy.PNG" alt="">
+      </div>
+      <div class="bott">
+         <p>Munchies</p>
+      </div>
+   </div>
+   
+   <div class="smcard">
+      <div class="top">
+         <img src="../../assets/cold.webp" alt="">
+      </div>
+      <div class="bott">
+         <p>Tea, Coffee & Health Drinks</p>
+      </div>
+   </div>
+
+   
+
+</div>
+
+
+<div class="dairy">
+   <div class="head">
+      <h3>Dairy Product</h3>
+   </div>
+   <div class="body" *ngIf="products && products.length > 0; ">
+      <div class="lcard" *ngFor="let product of products">
+         <div class="imagesection">
+            <img src={{product.imageUrl}} alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>{{product.time}}</p>
+         </div>
+         <div class="productname">
+            <h6>{{product.name}}</h6>
+         </div>
+         <div class="qty">
+            <p>{{product.qty}}</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>{{product.price}}</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+<!-- 
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Milk/m1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>500ml</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Milk/m1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>500ml</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div> -->
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Milk/m1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>500ml</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Milk/m1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>500ml</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Milk/m1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>500ml</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Rolling paper & tobacco -->
+<div class="dairy">
+   <div class="head">
+      <h3>Rolling paper & tobacco</h3>
+   </div>
+   <div class="body">
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Paper/p1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>2pack</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Paper/p1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>2pack</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Paper/p1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>2pack</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Paper/p1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>2pack</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Paper/p1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>2pack</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/Paper/p1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Amul Taaza Toned Fresh Milk</h6>
+         </div>
+         <div class="qty">
+            <p>2pack</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>28</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      
+
+   </div>
+</div>
+
+<!-- //Snacks & Munchies -->
+<div class="dairy">
+   <div class="head">
+      <h3>Snacks & Munchies</h3>
+   </div>
+   <div class="body">
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/snacks/s1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Jolochip Last Chip Challenge Chips</h6>
+         </div>
+         <div class="qty">
+            <p>5g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>286</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/snacks/s1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Jolochip Last Chip Challenge Chips</h6>
+         </div>
+         <div class="qty">
+            <p>5g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>286</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/snacks/s1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Jolochip Last Chip Challenge Chips</h6>
+         </div>
+         <div class="qty">
+            <p>5g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>286</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/snacks/s1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Jolochip Last Chip Challenge Chips</h6>
+         </div>
+         <div class="qty">
+            <p>5g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>286</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/snacks/s1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Jolochip Last Chip Challenge Chips</h6>
+         </div>
+         <div class="qty">
+            <p>5g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>286</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/snacks/s1.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Jolochip Last Chip Challenge Chips</h6>
+         </div>
+         <div class="qty">
+            <p>5g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>287</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Mouth fresheners -->
+<div class="dairy">
+   <div class="head">
+      <h3>Mouth fresheners</h3>
+   </div>
+   <div class="body">
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/mouth Freeshner/mint.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Impact Sugar Free Mint Candy (Strawberry)</h6>
+         </div>
+         <div class="qty">
+            <p>14g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>150</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/mouth Freeshner/mint.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Impact Sugar Free Mint Candy (Strawberry)</h6>
+         </div>
+         <div class="qty">
+            <p>14g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>150</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/mouth Freeshner/mint.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Impact Sugar Free Mint Candy (Strawberry)</h6>
+         </div>
+         <div class="qty">
+            <p>14g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>150</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/mouth Freeshner/mint.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Impact Sugar Free Mint Candy (Strawberry)</h6>
+         </div>
+         <div class="qty">
+            <p>14g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>150</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/mouth Freeshner/mint.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Impact Sugar Free Mint Candy (Strawberry)</h6>
+         </div>
+         <div class="qty">
+            <p>14g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>150</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="lcard">
+         <div class="imagesection">
+            <img src="../../assets/mouth Freeshner/mint.PNG" alt="">
+         </div>
+         <div class="timebtn">
+            <p><i class="bi bi-stopwatch"></i>8min</p>
+         </div>
+         <div class="productname">
+            <h6>Impact Sugar Free Mint Candy (Strawberry)</h6>
+         </div>
+         <div class="qty">
+            <p>14g</p>
+         </div>
+         <div class="foot">
+            <div class="price"><i class="bi bi-currency-rupee"></i>150</div>
+            <div class="addbtn">
+               <button type="button" class="btn btn-outline-success">Add</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<router-outlet></router-outlet>

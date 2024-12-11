@@ -1,0 +1,68 @@
+
+<div *ngIf="users && users.length > 0; else noData">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Contact Number</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone }}</td>
+          <td>{{ user.gender }}</td>
+          <td>{{ user.address }}</td>
+          <td>{{ user.city }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <a><button class="btn btn-warning" (click)="updateUser(user.id)">Update</button></a>
+            <a><button class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button></a> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+  <ng-template #noData>
+    <p>No users found.</p>
+  </ng-template>
+
+<div *ngIf="userDetails">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Role</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <form (ngSubmit)="updateUserD()" method="post">
+          <input type="text" id="name" [(ngModel)]="userDetails.name" name="name">
+          <input type="number" id="phone" [(ngModel)]="userDetails.phone" name="phone" required>
+          <select id="role" name="role" [(ngModel)]="userDetails.Role">
+            <option value="user">User</option>
+            <option value="seller">Seller</option>
+            <option value="admin">Admin</option>
+          </select>
+          <button type="submit">Update User</button>
+        </form>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>

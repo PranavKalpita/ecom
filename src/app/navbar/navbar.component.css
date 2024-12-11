@@ -1,0 +1,40 @@
+.navb{
+    padding: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background-color: white;
+}
+.navb>.heading{
+    margin-left: 30px;
+    font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    letter-spacing: -1px; 
+    color: #ffcc00; 
+}
+.navb .heading .it{
+    color:rgb(130, 199, 26);
+}
+
+.navb .loc{
+    margin-left: 30px;
+    width: 20%;
+    text-align: center;
+}
+.sear{
+    margin-left: 30px;
+    width: 30%;
+}
+
+.login{
+    margin-left: 80px;
+    width: 10%;
+    text-align: center;
+}
+
+.cartbutton{
+    margin-left: 80px;
+}
